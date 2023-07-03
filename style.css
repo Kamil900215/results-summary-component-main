@@ -39,7 +39,7 @@
     text-align: center;
     gap: 0.8rem;
 }
-@media screen and (min-width: 760px)  {
+@media screen and (min-width: 820px)  {
     body{
         height: 100vh;
         display: grid;
@@ -47,21 +47,29 @@
     }
     .container{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         height: 50%;
-        max-width: 70%;
+        max-width: 50%;
         border-radius: 2rem;
         box-shadow: 11px 24px 37px -6px var(--dark-gray-blue);
     }
     .result{
+        flex: 1;
+        display: grid;
+        place-items: center;
         border-radius: 2rem;
         height: 100%;
-        width: 38%;
-        text-align: center;
+        padding: 0;
     }
+    .reult-comparison{
+        text-align: center;
+        margin: 0;
+        padding: 0 0;
+    }
+    
     .summary{
-        width: 65%;
+        flex: 1;
     }
 }
 
